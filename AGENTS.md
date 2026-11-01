@@ -17,6 +17,9 @@
 ## Page metadata
 - Every content route defines one self-referencing canonical and matching og:url using the published site origin in its leaf head(); never add canonicals to the root layout, which would duplicate them on child pages.
 
+## Image delivery
+- Reference Lovable-hosted image pointers through the absolute Lovable published origin when serving the site on external hosting; external hosts do not provide the `/__l5e/assets-v1/` endpoint.
+
 ## Booking submissions
 - Validate enquiries with a shared Zod schema and save through a purpose-built public server function before opening LINE; this ensures enquiries survive without exposing records to visitors.
 - Keep booking_requests service-role-only with RLS and per-submission UUID deduplication; owners review entries in Cloud, not a public listing.
