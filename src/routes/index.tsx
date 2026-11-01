@@ -769,6 +769,7 @@ function Index() {
       {/* Footer */}
       <footer className="mt-16 bg-primary py-12 text-primary-foreground">
         <div className="mx-auto max-w-3xl space-y-6 px-4 text-center">
+          <img src={`https://yoshino-river-paddle-tours.lovable.app/__l5e/assets-v1/764f8625-b3c7-4787-ba90-42de1ca6e703/2025_05_SUP08.png`} alt="吉野川でSUPを楽しむ様子" loading="lazy" className="mx-auto w-full max-w-2xl rounded-2xl" />
           <p className="font-display text-3xl font-bold">最高の休日に出発。</p>
           <div className="grid items-center gap-5 text-left sm:grid-cols-[minmax(0,240px)_1fr]">
             <img src={`https://yoshino-river-paddle-tours.lovable.app/__l5e/assets-v1/17c8c0e5-3b14-4487-bd77-82229e58d163/shop-base.jpg`} alt="ガルバンゾのベース（店舗）" className="mx-auto w-full max-w-[240px] rounded-2xl" />
