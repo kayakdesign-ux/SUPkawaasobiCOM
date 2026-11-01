@@ -22,7 +22,6 @@ const afterFlow: { t: string; b: string[] }[] = [
 
 
 const LINE_URL = "https://page.line.me/418xyaym?openQrModal=true";
-const K = "https://kayaks.jp/wp/wp-content/uploads";
 const HERO = `/__l5e/assets-v1/81219088-dbfe-4c68-8ddf-5e7cf90fb1b7/2024_10_GOPR3336-1024x896.jpg`;
 
 export const FAQS: { q: string; a: string }[] = [
@@ -229,7 +228,7 @@ const highlights: { t: string; i?: typeof MapPin; hot?: boolean; soft?: boolean;
 
 const flow = [
   { img: `/__l5e/assets-v1/5935b99a-d6dd-4fd5-a7bb-f5efeddccfae/2025_05_P8013228-1024x768.jpg`, d: "準備運動、漕ぎ方の練習。JRCA公認インストラクターがレッスン 20分程度" },
-  { img: `${K}/2024/07/GOPR2636_1500-1024x896.jpg`, d: "浮く練習・クールダウン・レスキュー練習と熱中症対策。記念写真もお撮りします。" },
+  { img: `/__l5e/assets-v1/e385f0dd-edc8-4933-9f39-735f45d18b58/2024_07_GOPR2636_1500-1024x896.jpg`, d: "浮く練習・クールダウン・レスキュー練習と熱中症対策。記念写真もお撮りします。" },
   { img: `/__l5e/assets-v1/5256d88a-8985-4b4a-91d9-e84fb20beaf8/2025_05_GOPR4249-1024x768.jpg`, d: "出発！のんびりする、練習する、癒される！ミニレッスンを受ける事も可能" },
   { img: `/__l5e/assets-v1/23149119-670e-432c-9838-1490770b9030/2023_07_202307131342-1.jpg`, d: "希望者は岩から飛び込みもあり。約40分間 自由時間あるので自分のペースで遊ぶ。" },
   { img: `/__l5e/assets-v1/f7d9f2e2-c465-48b6-81d4-85726b22acef/2025_05_GOPR4324-1024x896.jpg`, d: "無事ゴール。笑顔が楽しさの証です。スタッフが撮った写真は購入も可能です。" },
@@ -770,10 +769,9 @@ function Index() {
       {/* Footer */}
       <footer className="mt-16 bg-primary py-12 text-primary-foreground">
         <div className="mx-auto max-w-3xl space-y-6 px-4 text-center">
-          <Reveal><img src={`${K}/2025/05/P8054157-Sup_nerrupng-1024x586.png`} alt="楽しみ方はいろいろ" className="mx-auto w-full max-w-3xl rounded-2xl shadow-2xl animate-float" /></Reveal>
           <p className="font-display text-3xl font-bold">最高の休日に出発。</p>
           <div className="grid items-center gap-5 text-left sm:grid-cols-[minmax(0,240px)_1fr]">
-            <img src={`${K}/2024/10/%E5%BA%97%E8%88%971-1024x836-1.jpg`} alt="ガルバンゾのベース（店舗）" className="mx-auto w-full max-w-[240px] rounded-2xl" />
+            <img src={`/__l5e/assets-v1/17c8c0e5-3b14-4487-bd77-82229e58d163/shop-base.jpg`} alt="ガルバンゾのベース（店舗）" className="mx-auto w-full max-w-[240px] rounded-2xl" />
             <div className="space-y-1">
               <p className="font-display text-xl font-bold">おおとよIC 約15分</p>
               <p>国道32号と国道439号の合流に</p>
@@ -790,7 +788,11 @@ function Index() {
           </div>
           <p className="rounded-2xl bg-background/10 p-4 text-left text-sm leading-relaxed">［SUPかわあそび］は吉野川で夏期（7月〜9月）を中心にSUPツアーを開催しています。オフシーズンの団体予約やその他のお問い合わせは、お電話またはメールにてご連絡ください。</p>
           <div><LineButton href="#entry-form" onPress={scrollToEntryForm} className="w-full max-w-md py-5 text-lg" /></div>
-          <a href="#toppage" className="block text-sm underline">Topへ戻る</a>
+          <p className="flex items-center justify-center gap-3 text-lg font-bold">
+            <a href="#toppage" className="underline">Topへ戻る</a>
+            <span aria-hidden="true">｜</span>
+            <a href="https://kawaasobi.com" className="underline">川遊び.comへ戻る</a>
+          </p>
         </div>
       </footer>
 
